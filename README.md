@@ -64,7 +64,8 @@ Now we should see our new dataset appear with the name we gave to it, in under t
 When the experiment is complete, it will appear as complete, as as shown below:
 ![image](images/Experiment-complete.png)
 
-and the best model shown as below:
+And the best model shown as below:
+
 ![image](images/Best-model-success-1.png)
 
 #### Deploying The Best Model:

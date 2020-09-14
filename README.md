@@ -1,13 +1,15 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 
 # Operationalizing Machine Learning Using Azure
+It is one thing building a machine learning model, and another thing making them operational. After traning a machine learning model, it needs to be deployed into the right environment to allow access. This may be in the form of API endpoints or webservices. This project details the steps involved in deploying a model to an endpoint, which is made available as an HTTP REST API.
 
-*TODO:* Write an overview to your project.
-It is one thing building a machine learning model, and another thing making them operational. After traning a machine learning model, it needs to be deployed into the right environment to allow access. This may be in the form of API enpoints or webservices. This project details the steps involved in deploying a model to an endpoint, and made available as an HTTP REST API.
+## Possible Future Improvements
+This project's scope focused more on the machine learning process with Azure, and hence does not dwell much on optimising the model for accuracy and performance. In that regard, to improve up this model, it helps to pay more attention to the feature selection, as the prediction seems to depend on just about 8 features out of the total 20. This can seen by observing the explantion output after the model training process. When just the most important features are used,
+1. The model accuracy may increase due to decreased chances of overfitting
+2. The payload required for prediction will also reduce in size, and hence may increase perfomance, especially throughput and response time, of the deployed model's API.
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+Below is an architectural diagram of the project, covering the notable areas of the process:
+![image](images/OML-Archtitecture-Diagram.png)
 
 ## Key Steps
 This project details the entire process from authentication to comsuming the deployed model API in 6 key steps:
@@ -177,25 +179,23 @@ The image below shows the *Use Run Details* widget displaying the step runs in t
 
 After completion, we can also see the evidence of the process in the ML Studio.
 
-- We can see the scheduled run scucessfylly complted as shown below:
+**We can see the scheduled run scucessfylly complted as shown below:**
 ![image](images/Scheduled-run-success.png)
 
-- Then we can see the pipeline successfully created:
+**Then we can see the pipeline successfully created:**
 ![image](images/Pipeline-created-success.png)
 
-- We can also see an endpoint successfully created after completing the *Publish and run from REST endpint* section:
+**We can also see an endpoint successfully created after completing the *Publish and run from REST endpint* section:**
 ![image](images/Endpoint-created-success.png)
 
-and we can particularly see it marked as active, signfying that it is live and running:
+**and we can particularly see it marked as active, signfying that it is live and running:**
 ![image](images/Endpoint-Active-success.png)
 
-- By clicking on the pipeline endpoint above, we displayed with the details of the pipeline showing the **Bankmarketing dataset** and the **Auto ML module** connected:
+**By clicking on the pipeline endpoint above, we displayed with the details of the pipeline showing the *Bankmarketing dataset* and the *Auto ML module* connected:**
 ![image](Dataset-with-module-success.png)
 
-and the endpoint marked as active with the access url shown in the *Published endpoint overview*:
+**and the endpoint marked as active with the access url shown in the *Published endpoint overview*:**
 ![image](images/Overview-showing-endpoint-success.png)
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
@@ -206,4 +206,3 @@ and the endpoint marked as active with the access url shown in the *Published en
 Below in a benchmark generated from for the API, using the Apache Benchmarking CLI tool, ```ab.exe`` :
 ![image](images/benchmark-success.png)
 
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.

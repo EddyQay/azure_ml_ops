@@ -16,7 +16,6 @@ logger.setLevel(logging.ERROR)
 handler = logging.StreamHandler(stream=sys.stdout)
 logger.addHandler(handler)
 
-
 # endpoint is the Blob storage URL.
 endpoint = 'azuerml4140135745.blob.core.windows.net/azureml-blobstore-283c646f-cf59-416d-8fe7-d0db144034ca'
 client = BlobClient(endpoint, DefaultAzureCredential(), logging_enable=True, blob_name='workspaceblobstore')

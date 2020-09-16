@@ -198,7 +198,9 @@ After completion, we can also see the evidence of the process in the ML Studio.
 ![image](images/Overview-showing-endpoint-success.png)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Below is a link the screencast of the working application, hosted on youtube:
+
+[https://youtu.be/237t03_O5m0](https://youtu.be/237t03_O5m0)
 
 ## Standout Suggestions
 

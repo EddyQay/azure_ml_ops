@@ -163,10 +163,6 @@ We've deployed the model, exposed endpoints, and it is now time to consume them.
 We execute the ```endpoint.py``` file, and below are the results of a successful prediction.
 ![image](images/Enpoint-test-success-LI.png)
 
-### Load-Testing The API
-Below in a benchmark generated from for the API, using the Apache Benchmarking CLI tool, ```ab.exe`` :
-![image](images/benchmark-success.png)
-
 
 ## Creating And Publishing A Pipeline With Notebooks
 This section highlights the steps taken to create the same project, but this time, using Jupyter Notebooks on Azure, utilising the same resources created earlier on. The results achieved is the same as that achieved with the Azure ML Studio in the earlier section.
@@ -205,3 +201,10 @@ After completion, we can also see the evidence of the process in the ML Studio.
 Below is a link to the screencast of the working application, hosted on Youtube:
 
 [https://youtu.be/237t03_O5m0](https://youtu.be/237t03_O5m0)
+
+## Standout Suggestions
+
+### Load-Testing The API
+Below in a benchmark generated from for the API, using the Apache Benchmarking CLI tool, ```ab.exe`` :
+![image](images/benchmark-success.png)
+

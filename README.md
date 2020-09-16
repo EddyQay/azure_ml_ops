@@ -198,7 +198,7 @@ After completion, we can also see the evidence of the process in the ML Studio.
 ![image](images/Overview-showing-endpoint-success.png)
 
 ## Screen Recording
-Below is a link the screencast of the working application, hosted on youtube:
+Below is a link to the screencast of the working application, hosted on Youtube:
 
 [https://youtu.be/237t03_O5m0](https://youtu.be/237t03_O5m0)
 
